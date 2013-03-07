@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([Mar7AppDelegate class]));
-    }
+	@autoreleasepool {
+		return UIApplicationMain(argc, argv, nil, NSStringFromClass([Mar7AppDelegate class]));
+
+	}
 }

@@ -21,6 +21,15 @@
 		3CB3595016E7C3B9005CDF1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB3593116E7C3B8005CDF1A /* Foundation.framework */; };
 		3CB3595816E7C3B9005CDF1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3595616E7C3B9005CDF1A /* InfoPlist.strings */; };
 		3CB3595B16E7C3B9005CDF1A /* Mar7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3595A16E7C3B9005CDF1A /* Mar7Tests.m */; };
+		3CB3596B16E7CF7C005CDF1A /* AgainstMe.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596416E7CF7C005CDF1A /* AgainstMe.JPG */; };
+		3CB3596C16E7CF7C005CDF1A /* BloodyMary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596516E7CF7C005CDF1A /* BloodyMary.jpg */; };
+		3CB3596D16E7CF7C005CDF1A /* DKM.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596616E7CF7C005CDF1A /* DKM.JPG */; };
+		3CB3596E16E7CF7C005CDF1A /* PinkFloyd.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596716E7CF7C005CDF1A /* PinkFloyd.JPG */; };
+		3CB3596F16E7CF7C005CDF1A /* RustedRoot.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596816E7CF7C005CDF1A /* RustedRoot.JPG */; };
+		3CB3597016E7CF7C005CDF1A /* Socia_D.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596916E7CF7C005CDF1A /* Socia_D.JPG */; };
+		3CB3597116E7CF7C005CDF1A /* VNV_2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CB3596A16E7CF7C005CDF1A /* VNV_2012.jpg */; };
+		3CB3597416E7D093005CDF1A /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3597316E7D093005CDF1A /* View.m */; };
+		3CB3597716E94D72005CDF1A /* ImageTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB3597616E94D72005CDF1A /* ImageTile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,17 @@
 		3CB3595716E7C3B9005CDF1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3CB3595916E7C3B9005CDF1A /* Mar7Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mar7Tests.h; sourceTree = "<group>"; };
 		3CB3595A16E7C3B9005CDF1A /* Mar7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mar7Tests.m; sourceTree = "<group>"; };
+		3CB3596416E7CF7C005CDF1A /* AgainstMe.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = AgainstMe.JPG; path = ../AgainstMe.JPG; sourceTree = "<group>"; };
+		3CB3596516E7CF7C005CDF1A /* BloodyMary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BloodyMary.jpg; path = ../BloodyMary.jpg; sourceTree = "<group>"; };
+		3CB3596616E7CF7C005CDF1A /* DKM.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DKM.JPG; path = ../DKM.JPG; sourceTree = "<group>"; };
+		3CB3596716E7CF7C005CDF1A /* PinkFloyd.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = PinkFloyd.JPG; path = ../PinkFloyd.JPG; sourceTree = "<group>"; };
+		3CB3596816E7CF7C005CDF1A /* RustedRoot.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RustedRoot.JPG; path = ../RustedRoot.JPG; sourceTree = "<group>"; };
+		3CB3596916E7CF7C005CDF1A /* Socia_D.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Socia_D.JPG; path = ../Socia_D.JPG; sourceTree = "<group>"; };
+		3CB3596A16E7CF7C005CDF1A /* VNV_2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = VNV_2012.jpg; path = ../VNV_2012.jpg; sourceTree = "<group>"; };
+		3CB3597216E7D093005CDF1A /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		3CB3597316E7D093005CDF1A /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		3CB3597516E94D72005CDF1A /* ImageTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTile.h; sourceTree = "<group>"; };
+		3CB3597616E94D72005CDF1A /* ImageTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +134,10 @@
 			children = (
 				3CB3593E16E7C3B8005CDF1A /* Mar7AppDelegate.h */,
 				3CB3593F16E7C3B8005CDF1A /* Mar7AppDelegate.m */,
+				3CB3597216E7D093005CDF1A /* View.h */,
+				3CB3597316E7D093005CDF1A /* View.m */,
+				3CB3597516E94D72005CDF1A /* ImageTile.h */,
+				3CB3597616E94D72005CDF1A /* ImageTile.m */,
 				3CB3593616E7C3B8005CDF1A /* Supporting Files */,
 			);
 			path = Mar7;
@@ -122,6 +146,13 @@
 		3CB3593616E7C3B8005CDF1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3CB3596416E7CF7C005CDF1A /* AgainstMe.JPG */,
+				3CB3596516E7CF7C005CDF1A /* BloodyMary.jpg */,
+				3CB3596616E7CF7C005CDF1A /* DKM.JPG */,
+				3CB3596716E7CF7C005CDF1A /* PinkFloyd.JPG */,
+				3CB3596816E7CF7C005CDF1A /* RustedRoot.JPG */,
+				3CB3596916E7CF7C005CDF1A /* Socia_D.JPG */,
+				3CB3596A16E7CF7C005CDF1A /* VNV_2012.jpg */,
 				3CB3593716E7C3B8005CDF1A /* Mar7-Info.plist */,
 				3CB3593816E7C3B8005CDF1A /* InfoPlist.strings */,
 				3CB3593B16E7C3B8005CDF1A /* main.m */,
@@ -228,6 +259,13 @@
 				3CB3594216E7C3B8005CDF1A /* Default.png in Resources */,
 				3CB3594416E7C3B8005CDF1A /* Default@2x.png in Resources */,
 				3CB3594616E7C3B8005CDF1A /* Default-568h@2x.png in Resources */,
+				3CB3596B16E7CF7C005CDF1A /* AgainstMe.JPG in Resources */,
+				3CB3596C16E7CF7C005CDF1A /* BloodyMary.jpg in Resources */,
+				3CB3596D16E7CF7C005CDF1A /* DKM.JPG in Resources */,
+				3CB3596E16E7CF7C005CDF1A /* PinkFloyd.JPG in Resources */,
+				3CB3596F16E7CF7C005CDF1A /* RustedRoot.JPG in Resources */,
+				3CB3597016E7CF7C005CDF1A /* Socia_D.JPG in Resources */,
+				3CB3597116E7CF7C005CDF1A /* VNV_2012.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +302,8 @@
 			files = (
 				3CB3593C16E7C3B8005CDF1A /* main.m in Sources */,
 				3CB3594016E7C3B8005CDF1A /* Mar7AppDelegate.m in Sources */,
+				3CB3597416E7D093005CDF1A /* View.m in Sources */,
+				3CB3597716E94D72005CDF1A /* ImageTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
