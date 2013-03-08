@@ -47,37 +47,68 @@
 - (void) swipe: (UISwipeGestureRecognizer *) recognizer {
 	//CGPoint p = [recognizer locationInView: self];
     NSLog (@"SWIPE");
-    CGPoint point = CGPointMake(0,0);
-	if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
-		NSLog (@"SWIPE RIGHT ");
-        [[_images objectAtIndex: counter] drawAtPoint: point blendMode:(kCGBlendModeNormal) alpha:(1)];
-        if(++counter > [_images count]){
-            counter = 1;
-        }else{
-            ++counter;
-        }
+    	if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
+		NSLog (@"SWIPE RIGHT %i", counter);
+        
+        direction = 1;
+        [self setNeedsDisplay];
 	} else if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft) {
-		NSLog (@"SWIPE LEFT ");
-        [[_images objectAtIndex: counter] drawAtPoint: point blendMode:(kCGBlendModeNormal) alpha:(1)];
-        if(--counter < 1){
-            [_images count];
-        }else{
-            --counter;
-        }
+		NSLog (@"SWIPE LEFT %i", counter);
+        
+        direction = 0;
+        
+        [self setNeedsDisplay];
 	} 
 }
 
-       
-	
+-(UIImage *)resizeImage:(UIImage *)image width:(int)width height:(int)height {
+    NSLog(@"resizing");
+    CGImageRef imageRef = [image CGImage];
+    CGImageAlphaInfo alphaInfo = CGImageGetAlphaInfo(imageRef);
+    
+    //if (alphaInfo == kCGImageAlphaNone)
+    alphaInfo = kCGImageAlphaNoneSkipLast;
+    
+    CGContextRef bitmap = CGBitmapContextCreate(NULL, width, height, CGImageGetBitsPerComponent(imageRef),
+                                                4 * width, CGImageGetColorSpace(imageRef), alphaInfo);
+    CGContextDrawImage(bitmap, CGRectMake(0, 0, width, height), imageRef);
+    CGImageRef ref = CGBitmapContextCreateImage(bitmap);
+    UIImage *result = [UIImage imageWithCGImage:ref];
+    
+    CGContextRelease(bitmap);
+    CGImageRelease(ref);
+    
+    return result;
+}
 
 
-/*
+
+
  // Only override drawRect: if you perform custom drawing.
  // An empty implementation adversely affects performance during animation.
  - (void)drawRect:(CGRect)rect
  {
- // Drawing code
+     CGPoint point = CGPointMake(0,0);
+     UIImage *i = [_images objectAtIndex: counter];
+     i = [self resizeImage:i width:self.bounds.size.width height: self.bounds.size.height];
+     
+     [i drawAtPoint: point blendMode:(kCGBlendModeNormal) alpha:(1)];
+     
+     if(direction == 1){
+         if(counter+1 > [_images count]-1){
+             counter = 1;
+         }else{
+             ++counter;
+         }
+     }else{
+         if(counter-1 < 0){
+             counter = [_images count]-1;
+         }else{
+             --counter;
+         }
+     }
+     
  }
- */
+
 
 @end
