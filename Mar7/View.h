@@ -11,6 +11,7 @@
 @interface View: UIView {
     NSMutableArray *_images;
     NSInteger counter;
+    NSInteger direction;
 }
 
 @end
